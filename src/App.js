@@ -5,7 +5,7 @@ import Previewer from './Previewer';
 
 function App() {
   const [text, setText] = useState('');
-  console.log(text);
+
   return (
     <div className='App'>
       <h1>Markdown Previewer</h1>
