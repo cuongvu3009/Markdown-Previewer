@@ -1,0 +1,58 @@
+.previewer-container {
+	border: 1px solid black;
+	margin: 20px;
+	width: 50%;
+	height: auto
+}
+
+.previewer-nav {
+	background-color: var(--darkBackground);
+	font-weight: bold;
+	padding: 10px
+}
+
+#preview {
+	background-color: var(--lightBackground);
+	width: 100%;
+	padding: 2rem;
+	height: auto;
+}
+
+ img {
+	display: block;
+	max-width: 100%;
+	margin: 2rem auto;
+}
+
+ code {
+	background: white;
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+ pre {
+	display: block;
+	overflow: auto;
+	background: white;
+	padding: 5px;
+	line-height: 1.2;
+}
+
+h1 {
+	border-bottom: 2px solid ;
+}
+
+ h2 {
+	border-bottom: 1px solid ;
+}
+
+ table {
+	border-collapse: collapse;
+}
+
+ td,
+th {
+	border: 2px solid ;
+	padding-left: 5px;
+	padding-right: 5px;
+}

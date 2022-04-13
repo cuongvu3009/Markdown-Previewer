@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './editor.css';
+import Previewer from './Previewer';
 
 function App() {
+  const [text, setText] = useState('');
+  console.log(text);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Markdown Previewer</h1>
+      <div className='editor-container'>
+        <nav className='editor-nav'>Editor</nav>
+        <textarea
+          name=''
+          id='editor'
+          cols='30'
+          rows='10'
+          onChange={(e) => setText(e.target.value)}
+          placeholder='Write something here...'
+        ></textarea>
+      </div>
+      <Previewer text={text} />
     </div>
   );
 }

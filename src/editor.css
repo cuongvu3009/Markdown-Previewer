@@ -1,0 +1,16 @@
+.editor-container {
+	border: 1px solid black;
+	margin: 20px;
+	width: 30%;
+}
+
+.editor-nav {
+	background-color: var(--darkBackground);
+	font-weight: bold;
+	padding: 10px
+}
+
+#editor {
+	background-color: var(--lightBackground);
+	width: 100%;
+}
